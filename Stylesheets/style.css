@@ -102,6 +102,8 @@ body.active { overflow: hidden; }
 
 
 
+
+
 /* REUSED STYLE */
 
 .container { padding-inline: 10px; }
@@ -434,6 +436,10 @@ margin-top: -5px;
 .about .btn {
   max-width: unset;
   width: 100%;
+
+  a{
+    color: white;
+  }
 }
 
 .btn-group a{
