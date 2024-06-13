@@ -587,10 +587,14 @@ margin-top: -5px;
 .project-card:is(:hover, :focus) .publish-date { transition-delay: 0.1s; }
 
 .load-more {
-  font-size: var(--fs-4);
+  font-size: 1.4rem;
   color: hsl(24, 74%, 58%);
   text-decoration: underline;
   margin-inline: auto;
+
+  a{
+    color: hsl(24, 74%, 58%);
+  }
 }
 
 
