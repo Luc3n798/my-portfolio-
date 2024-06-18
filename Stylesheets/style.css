@@ -94,6 +94,7 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   background: var(--bg-primary);
   transition:  0.25s ease-in-out;
 }
@@ -556,7 +557,7 @@ margin-top: -5px;
 
 .project-card:is(:hover, :focus)::after {
   background: hsla(0, 0%, 100%, 0.1);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(0.1px);
 }
 
 .project-card .card-content {
@@ -580,7 +581,7 @@ margin-top: -5px;
 }
 
 .project-card .publish-date {
-  font-size: var(--fs-6);
+  font-size: 0.813rem;
   color: var(--color-primary);
   transition-delay: 0s;
 }
@@ -818,9 +819,6 @@ textarea.input-field {
 }
 
 
-
-
-
 /**
  * responsive for larger than 992px screen
  */
@@ -935,7 +933,7 @@ textarea.input-field {
 
   .hero img {
     height: 100%;
-    width: auto;
+    width: 100%;
     margin-inline: auto;
   }
 
@@ -948,72 +946,7 @@ textarea.input-field {
   }
 
   .hero .btn-primary:is(:hover, :focus) { color: hsl(0, 0%, 12%); }
-
-  .hero-social-list {
-    display: block;
-    position: absolute;
-    bottom: 92px;
-    left: -30px;
-  }
-
-  .hero-social-list::after {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    left: 13px;
-    width: 2px;
-    height: 30px;
-    background: var(--color-secondary);
-  }
-
-  .hero-social-link {
-    position: relative;
-    color: var(--color-secondary);
-    margin-block: 5px;
-    padding: 5px;
-    font-size: 18px;
-    transition: 0.25s ease-in-out;
-  }
-
-  .hero-social-link:is(:hover, :focus) { color: var(--color-primary); }
-
-  .hero-social-link .tooltip {
-    --trans-x: 10px;
-
-    left: calc(100% + 10px);
-    top: 50%;
-    transform: translateY(-50%) translateX(var(--trans-x));
-  }
-
-  .hero-social-link:is(:hover, :focus) .tooltip {
-    --trans-x: 0;
-    opacity: 1;
-  }
-
-  .scroll-down {
-    display: block;
-    position: absolute;
-    bottom: 80px;
-    right: -30px;
-    color: var(--color-secondary);
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    transform: rotate(90deg);
-    transform-origin: top right;
-  }
-
-  .scroll-down::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: -50px;
-    width: 30px;
-    height: 2px;
-    background: var(--color-secondary);
-  }
-
-
-
+ 
   /**
    * ABOUT
    */
@@ -1026,9 +959,6 @@ textarea.input-field {
   }
 
   .about-banner { margin-bottom: 0; }
-
-
-
 
   /**
    * SKILLS
